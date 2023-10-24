@@ -45,7 +45,7 @@ h4 {
     color: #c6f4f1;
     padding-top: 1rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.9rem;
 }
 
 
@@ -55,32 +55,33 @@ h1 {
 
 
 p {
-    color: #c6f4f1;
+    color: rgba(198, 244, 241, 0.999);
     padding: 1rem 2rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(198, 244, 241, 0.99)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+    border: 1px solid rgb(198, 244, 241);
+}
 
 
 .menu {
     backdrop-filter: blur(3rem);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    list-style-type: none;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
 }
-
 
 
 .menu li a {
     color: #c6f4f1;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     text-decoration: none;
     position: relative;
+    margin-inline: 1rem;
+    padding: 2px;
 }
 
 
@@ -91,21 +92,29 @@ p {
     height: 2px;
     width: 0%;
     background-color: #c6f4f1;
-    bottom: -10px;
+    bottom: -2px;
+    left: 0px;
     transition: all ease-in-out 200ms;
 }
 
 
-.menu__active {
-    border-bottom: 3px solid #c6f4f1;
-    padding-bottom: 8px;
-}
-
-
-.menu li a:hover:not(.menu__active)::after {
+.menu li a:hover:not(.navbar-nav > .active > a)::after {
     width: 100%;
 }
 
+.nav-item a:hover{
+    color:#c6f4f1;
+}
+
+
+.navbar-nav {
+    margin-inline: auto;
+}
+
+.navbar-nav > .active > a {
+    border-bottom: 3px solid #c6f4f1;
+    color: #c6f4f1;
+}
 
 .contenido {
     backdrop-filter: blur(2rem);
@@ -119,9 +128,9 @@ p {
 
 
 .contenido__subtitulo {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding-top: 0;
-    margin: 1rem 0;
+    margin: 10px 0;
     text-align: left;
     padding-left: 2rem;
     text-decoration: underline;
@@ -139,7 +148,7 @@ p {
 
 
 .piepagina {
-    padding: 1rem;
+    padding: 10px;
     backdrop-filter: blur(3rem);
     display: flex;
     justify-content: space-between;
@@ -153,6 +162,8 @@ p {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 7px;
 }
 
 .piepagina__redesociales img {
@@ -163,9 +174,9 @@ p {
 .piepagina__indice li a {
     color: #c6f4f1;
     text-align: center;
-    margin-right: 2rem;
+    margin-right: 1rem;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: .8rem;
 }
 
 
@@ -188,7 +199,7 @@ p {
     align-items: center;
     width: 10rem;
     height: 10rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: #c6f4f1;
     text-decoration: none;
@@ -245,15 +256,15 @@ p {
 
 
 th {
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: 2px solid #c6f4f1;
+    text-align: center;
 }
-
 
 
 .contenido__tabla__titulo {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-inline: 5px;
     font-weight: 700;
     border: 2px solid #c6f4f1;
@@ -261,7 +272,7 @@ th {
 
 
 .contenido__tabla__ventajas {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-inline: 5px;
     border: 2px solid #c6f4f1;
     background: linear-gradient(rgb(36, 156, 36), transparent, rgb(25, 106, 25));
@@ -269,7 +280,7 @@ th {
 
 
 .contenido__tabla__desventajas {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-inline: 5px;
     border: 2px solid #c6f4f1;
     background: linear-gradient(rgb(154, 139, 25), transparent, rgb(75, 68, 12));
@@ -279,7 +290,7 @@ th {
 .contenido__lista {
     color: #c6f4f1;
     padding: 1px 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     list-style-position: inside;
 }
 
@@ -287,7 +298,7 @@ th {
 .contenido__lista--alt {
     color: #c6f4f1;
     padding: 0.8rem 1.8rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     list-style-type: decimal;
 }
 
@@ -310,30 +321,28 @@ form {
 
 
 .contenido__textformulario {
-    font-size: 1.4rem;
-    text-align: justify;
-    padding: 1.8rem;
+    font-size: 1.3rem;
+    text-align: left;
+    margin-bottom: 5px;
 }
-
 
 textarea {
     resize: none;
     font-size: 0.9rem;
-    margin: 1rem 0;
+    margin: .9rem 0;
 }
 
 input {
     font-size: 0.9rem;
-
 }
 
-input[type='submit'],
-input[type='reset'] {
+input[type='submit'] {
     background-color: #c6f4f1;
     border-radius: 1rem;
     padding: 0.5rem 0.8rem;
     margin: 0.5rem 1.5rem;
     font-weight: 600;
+    font-size: .9rem;
 }
 
 
@@ -346,13 +355,18 @@ input[type='reset'] {
         font-size: .9rem;
     }
 
-    
+    .navbar-toggler-icon {
+        vertical-align: baseline;
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+
     .menu {
         flex-direction: column;
     }
 
     .menu li a {
-        font-size: 1.1rem;
+        font-size: .9rem;
     }
 
     .piepagina__indice {
@@ -364,7 +378,8 @@ input[type='reset'] {
     }
 
     .piepagina__redesociales {
-        gap: 2rem;
+        padding-left: 0;
+        gap: 1rem;
     }
 
     .contenido {
@@ -407,8 +422,23 @@ input[type='reset'] {
         font-size: 0.9rem;
     }
 
-}
+    .contenido__textformulario {
+        font-size: .9rem;
+    }
 
+    textarea {
+        font-size: 12px;
+    }
+    
+    input {
+        font-size: 12px;
+    }
+    
+    input[type='submit'] {
+        font-size: 12px;
+    }
+
+}
 
 @media screen and (min-width:481px) and (max-width:768px) {
     h1 {
@@ -419,13 +449,18 @@ input[type='reset'] {
         font-size: 1rem;
     }
 
-    
+    .navbar-toggler-icon {
+        vertical-align: baseline;
+        width: 1rem;
+        height: 1rem;
+    }
+
     .menu {
         flex-direction: column;
     }
 
     .menu li a {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .piepagina__indice {
@@ -437,6 +472,7 @@ input[type='reset'] {
     }
 
     .piepagina__redesociales {
+        padding-left: 0;
         gap: 2rem;
     }
 
@@ -474,19 +510,43 @@ input[type='reset'] {
         font-size: 1rem;
     }
 
+    .contenido__textformulario {
+        font-size: 1rem;
+    }
+
+    textarea {
+        font-size: 13px;
+    }
+    
+    input {
+        font-size: 13px;
+    }
+    
+    input[type='submit'] {
+        font-size: 13px;
+    }
+
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
+
+    .navbar-toggler-icon {
+        vertical-align: baseline;
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+
     .menu li a {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .contenido {
@@ -513,10 +573,24 @@ input[type='reset'] {
     .contenido__tabla__ventajas,
     .contenido__tabla__desventajas,
     .contenido__lista,
-    .contenido__lista--alt 
-     {
+    .contenido__lista--alt {
         font-size: 1.1rem;
     }
 
+    .contenido__textformulario {
+        font-size: 1.1rem;
+    }
+
+    textarea {
+        font-size: 14px;
+    }
+    
+    input {
+        font-size: 14px;
+    }
+    
+    input[type='submit'] {
+        font-size: 14px;
+    }
 
 }
