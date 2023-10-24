@@ -82,6 +82,7 @@ p {
     position: relative;
     margin-inline: 1rem;
     padding: 2px;
+    width: max-content;
 }
 
 
@@ -102,8 +103,8 @@ p {
     width: 100%;
 }
 
-.nav-item a:hover{
-    color:#c6f4f1;
+.nav-item a:hover {
+    color: #c6f4f1;
 }
 
 
@@ -111,7 +112,7 @@ p {
     margin-inline: auto;
 }
 
-.navbar-nav > .active > a {
+.navbar-nav>.active>a {
     border-bottom: 3px solid #c6f4f1;
     color: #c6f4f1;
 }
@@ -429,11 +430,11 @@ input[type='submit'] {
     textarea {
         font-size: 12px;
     }
-    
+
     input {
         font-size: 12px;
     }
-    
+
     input[type='submit'] {
         font-size: 12px;
     }
@@ -517,11 +518,11 @@ input[type='submit'] {
     textarea {
         font-size: 13px;
     }
-    
+
     input {
         font-size: 13px;
     }
-    
+
     input[type='submit'] {
         font-size: 13px;
     }
@@ -584,11 +585,11 @@ input[type='submit'] {
     textarea {
         font-size: 14px;
     }
-    
+
     input {
         font-size: 14px;
     }
-    
+
     input[type='submit'] {
         font-size: 14px;
     }
