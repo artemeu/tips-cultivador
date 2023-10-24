@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     background-image: url(../img/fondo8.jpg);
     background-position: center center;
@@ -15,10 +16,9 @@ body {
     grid-template-rows: 0.2fr 2fr 0.2fr;
     grid-template-areas:
         "header header header"
-        "...... principal ....."
+        "..... principal ...."
         "footer footer footer";
-    gap: 2rem;
-    width: 100%;
+    gap: 3rem 0;
     height: 100vh;
 }
 
@@ -43,7 +43,7 @@ h2,
 h3,
 h4 {
     color: #c6f4f1;
-    padding-top: 2rem;
+    padding-top: 1rem;
     text-align: center;
     font-size: 2rem;
 }
@@ -54,12 +54,12 @@ h1 {
 }
 
 
-
 p {
     color: #c6f4f1;
     padding: 1rem 2rem;
     font-size: 1.2rem;
 }
+
 
 
 .menu {
@@ -80,7 +80,7 @@ p {
     color: #c6f4f1;
     font-size: 1.4rem;
     text-decoration: none;
-    position: relative;  
+    position: relative;
 }
 
 
@@ -92,7 +92,7 @@ p {
     width: 0%;
     background-color: #c6f4f1;
     bottom: -10px;
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 200ms;
 }
 
 
@@ -102,29 +102,26 @@ p {
 }
 
 
-.menu li a:hover:not(.menu__active)::after{
+.menu li a:hover:not(.menu__active)::after {
     width: 100%;
 }
 
 
-
 .contenido {
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(2rem);
     border-radius: 3rem;
     padding-bottom: 1rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
 
 .contenido__subtitulo {
     font-size: 1.4rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    padding-top: 0;
+    margin: 1rem 0;
     text-align: left;
     padding-left: 2rem;
     text-decoration: underline;
@@ -154,7 +151,7 @@ p {
 .piepagina__redesociales {
     list-style-type: none;
     display: flex;
-    gap: 5px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
@@ -192,7 +189,7 @@ p {
     width: 10rem;
     height: 10rem;
     font-size: 1.3rem;
-    font-weight: 800;
+    font-weight: 700;
     color: #c6f4f1;
     text-decoration: none;
     border-radius: 50%;
@@ -211,14 +208,14 @@ p {
     margin: 1rem;
 }
 
-.contenido__lista__img{
+.contenido__lista__img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
-.contenido__lista__img img{
+.contenido__lista__img img {
     width: 80%;
     margin: 1rem;
 }
@@ -234,8 +231,9 @@ p {
 
 .contenido__img--alt img,
 .contenido__img--alt img {
-    width: 70%;   
+    width: 70%;
 }
+
 
 
 .contenido__tabla {
@@ -256,6 +254,7 @@ th {
 .contenido__tabla__titulo {
     text-align: center;
     font-size: 1.2rem;
+    padding-inline: 5px;
     font-weight: 700;
     border: 2px solid #c6f4f1;
 }
@@ -263,6 +262,7 @@ th {
 
 .contenido__tabla__ventajas {
     font-size: 1.1rem;
+    padding-inline: 5px;
     border: 2px solid #c6f4f1;
     background: linear-gradient(rgb(36, 156, 36), transparent, rgb(25, 106, 25));
 }
@@ -270,6 +270,7 @@ th {
 
 .contenido__tabla__desventajas {
     font-size: 1.1rem;
+    padding-inline: 5px;
     border: 2px solid #c6f4f1;
     background: linear-gradient(rgb(154, 139, 25), transparent, rgb(75, 68, 12));
 }
@@ -285,7 +286,7 @@ th {
 
 .contenido__lista--alt {
     color: #c6f4f1;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.8rem;
     font-size: 1.2rem;
     list-style-type: decimal;
 }
@@ -336,3 +337,186 @@ input[type='reset'] {
 }
 
 
+@media screen and (max-width:480px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: .9rem;
+    }
+
+    
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu li a {
+        font-size: 1.1rem;
+    }
+
+    .piepagina__indice {
+        display: none;
+    }
+
+    .piepagina {
+        justify-content: center;
+    }
+
+    .piepagina__redesociales {
+        gap: 2rem;
+    }
+
+    .contenido {
+        width: 400px;
+    }
+
+    .contenido__subtitulo,
+    .contenido__subtitulo--alt {
+        font-size: 1rem;
+    }
+
+
+    .seccion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion a {
+        width: 8rem;
+        height: 8rem;
+        font-size: 1rem;
+        padding-inline: 2px;
+    }
+
+    th {
+        font-size: 0.9rem;
+    }
+
+
+    .contenido__tabla__titulo {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+
+    .contenido__tabla__ventajas,
+    .contenido__tabla__desventajas,
+    .contenido__lista,
+    .contenido__lista--alt {
+        font-size: 0.9rem;
+    }
+
+}
+
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu li a {
+        font-size: 1.2rem;
+    }
+
+    .piepagina__indice {
+        display: none;
+    }
+
+    .piepagina {
+        justify-content: center;
+    }
+
+    .piepagina__redesociales {
+        gap: 2rem;
+    }
+
+    .contenido {
+        width: 500px;
+    }
+
+    .contenido__subtitulo,
+    .contenido__subtitulo--alt {
+        font-size: 1.1rem;
+    }
+
+
+    .seccion a {
+        width: 8rem;
+        height: 8rem;
+        font-size: 1.1rem;
+        padding-inline: 2px;
+    }
+
+    th {
+        font-size: 1rem;
+    }
+
+
+    .contenido__tabla__titulo {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .contenido__tabla__ventajas,
+    .contenido__tabla__desventajas,
+    .contenido__lista,
+    .contenido__lista--alt {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .menu li a {
+        font-size: 1.3rem;
+    }
+
+    .contenido {
+        width: 600px;
+    }
+
+    .contenido__subtitulo,
+    .contenido__subtitulo--alt {
+        font-size: 1.3rem;
+    }
+
+
+    th {
+        font-size: 1.1rem;
+    }
+
+
+    .contenido__tabla__titulo {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+
+    .contenido__tabla__ventajas,
+    .contenido__tabla__desventajas,
+    .contenido__lista,
+    .contenido__lista--alt 
+     {
+        font-size: 1.1rem;
+    }
+
+
+}
