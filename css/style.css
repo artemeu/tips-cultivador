@@ -56,7 +56,7 @@ h1 {
 
 p {
     color: rgba(198, 244, 241, 0.999);
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
     font-size: 1.1rem;
 }
 
@@ -67,6 +67,10 @@ p {
 
 .navbar-toggler {
     border: 1px solid rgb(198, 244, 241);
+}
+
+.navbar-expand-lg .navbar-collapse{
+    justify-content: center;
 }
 
 
@@ -112,7 +116,7 @@ p {
     margin-inline: auto;
 }
 
-.navbar-nav>.active>a {
+.navbar-nav > .active > a {
     border-bottom: 3px solid #c6f4f1;
     color: #c6f4f1;
 }
@@ -127,7 +131,6 @@ p {
 }
 
 
-
 .contenido__subtitulo {
     font-size: 1.3rem;
     padding-top: 0;
@@ -139,12 +142,17 @@ p {
 
 
 .contenido__subtitulo--alt {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: left;
-    padding-left: 2rem;
+    padding-left: 1rem;
     text-decoration: underline;
+}
+
+
+.contenido__lista--alt li p {
+    padding-inline: 1rem;
 }
 
 
@@ -290,15 +298,15 @@ th {
 
 .contenido__lista {
     color: #c6f4f1;
-    padding: 1px 1.5rem;
-    font-size: 1.1rem;
+    padding: 1px 2rem;
+    font-size: 1rem;
     list-style-position: inside;
 }
 
 
 .contenido__lista--alt {
     color: #c6f4f1;
-    padding: 0.8rem 1.8rem;
+    padding: 5px 2rem;
     font-size: 1.1rem;
     list-style-type: decimal;
 }
@@ -367,7 +375,7 @@ input[type='submit'] {
     }
 
     .menu li a {
-        font-size: .9rem;
+        font-size: 1rem;
     }
 
     .piepagina__indice {
@@ -556,7 +564,7 @@ input[type='submit'] {
 
     .contenido__subtitulo,
     .contenido__subtitulo--alt {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
 
