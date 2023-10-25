@@ -362,6 +362,8 @@ input[type='submit'] {
 
     p {
         font-size: .9rem;
+        padding: 10px 2rem;
+        margin-bottom: 0;
     }
 
     .navbar-toggler-icon {
@@ -392,14 +394,20 @@ input[type='submit'] {
     }
 
     .contenido {
-        width: 300px;
+        width: 400px;
     }
 
-    .contenido__subtitulo,
+    .contenido__subtitulo {
+        font-size: 1rem;
+        padding-left: 1.4rem;
+    }
+
+
     .contenido__subtitulo--alt {
-        font-size: .9rem;
+        font-size: 1rem;
+        padding-left: 5px;
+        padding-bottom: 0;
     }
-
 
     .seccion {
         flex-direction: column;
@@ -425,10 +433,19 @@ input[type='submit'] {
 
 
     .contenido__tabla__ventajas,
-    .contenido__tabla__desventajas,
+    .contenido__tabla__desventajas {
+        font-size: 0.9rem;
+    }
+
     .contenido__lista,
     .contenido__lista--alt {
         font-size: 0.9rem;
+        padding: 0 1rem;
+        margin-bottom: 0;
+    }
+
+    .contenido__lista--alt li{
+        margin: 1.2rem;
     }
 
     .contenido__textformulario {
@@ -561,7 +578,7 @@ input[type='submit'] {
     }
 
     .contenido {
-        width: 600px;
+        width: 500px;
     }
 
     .contenido__subtitulo,
