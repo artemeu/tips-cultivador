@@ -1,5 +1,5 @@
 
-@media (max-width:575.98px) {
+@media (max-width:480px) {
     h1 {
         font-size: 1.3rem;
     }
@@ -33,7 +33,7 @@
     }
 
     .contenido {
-        max-width: 500px;
+        max-width: 400px;
 
         .accordion-flush {        
             --bs-accordion-btn-icon-width: .9rem;
@@ -157,7 +157,7 @@
 
 }
 
-@media (min-width:576px) and (max-width:767.98px) {
+@media (min-width:481px) and (max-width:768px) {
     h1 {
         font-size: 1.4rem;
     }
@@ -190,7 +190,7 @@
 
 
     .contenido {
-        max-width: 600px;
+        max-width: 500px;
 
             
     .accordion-flush {        
@@ -299,7 +299,7 @@
 
 }
 
-@media screen and (min-width:768px) and (max-width:1199.98px) {
+@media screen and (min-width:769px) and (max-width:1200px) {
     h1 {
         font-size: 1.4rem;
     }
