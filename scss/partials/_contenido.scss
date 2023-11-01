@@ -1,0 +1,240 @@
+.contenido {
+    backdrop-filter: blur(10px);
+    border-radius: 3rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 900px;
+
+
+    .seccion {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 1rem;
+        margin: 2rem;
+        flex-wrap: wrap;
+
+        a {
+            background-image: url(../img/fondo1.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            width: 10rem;
+            height: 10rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: $colorTexto;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+    }
+
+    .contenido__subtitulo {
+        font-size: 1.3rem;
+        padding-top: 0;
+        margin: 10px 0;
+        text-align: left;
+        padding-left: 2rem;
+        text-decoration: underline;
+    }
+
+
+    .accordion-flush {
+        --bs-accordion-bg: none;
+        --bs-accordion-border-color: #c6f4f1;
+        --bs-accordion-btn-padding-x: 2rem;
+        --bs-accordion-btn-color: none;
+        --bs-accordion-body-padding-x: 2rem;
+        margin-inline: .7rem;
+        --bs-accordion-active-color: none;
+        --bs-accordion-active-bg: none;
+
+
+        .accordion-item {
+            color: $colorTexto;
+
+            .accordion-body {
+                padding: 0;
+
+                p {
+                    font-size: 1.1rem;
+                    padding-inline: 2.5rem;
+                }
+            }
+
+
+            .accordion-header {
+
+                .accordion-button {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    padding-left: 1.5rem;
+
+                    &::after {
+                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23c6f4f1'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
+                    }
+                }
+
+            }
+
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+    }
+
+
+
+    .contenido__lista--alt {
+        color: $colorTexto;
+        padding: 5px 2rem;
+        font-size: 1.1rem;
+        list-style-type: decimal;
+
+        li {
+            margin: 1.5rem;
+
+            p {
+                padding-inline: 1rem;
+            }
+        }
+
+        .contenido__lista__img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 70%;
+                margin: 1rem;
+                border-radius: 10%;
+            }
+        }
+
+        .contenido__lista__img1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 50%;
+                margin: 1rem;
+                border-radius: 10%;
+            }
+        }
+    }
+
+    .contenido__img--alt {
+        display: flex;
+        justify-content: center;
+        margin: 2rem;
+
+        img {
+            width: 50%;
+            border-radius: 10%;
+
+        }
+    }
+
+
+    .contenido__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .contenido__tabla {
+        border-collapse: separate;
+        margin: 1.5rem 2rem;
+        color: $colorTexto;
+
+        th {
+            font-size: 1rem;
+            border: 2px solid $colorTexto;
+            text-align: center;
+        }
+
+
+        .contenido__tabla__titulo {
+            text-align: center;
+            font-size: 1rem;
+            padding-inline: 5px;
+            font-weight: 700;
+            border: 2px solid $colorTexto;
+        }
+
+
+        .contenido__tabla__ventajas {
+            font-size: 1rem;
+            padding-inline: 5px;
+            border: 2px solid $colorTexto;
+            background: linear-gradient(rgb(36, 156, 36), transparent, rgb(25, 106, 25));
+        }
+
+
+        .contenido__tabla__desventajas {
+            font-size: 1rem;
+            padding-inline: 5px;
+            border: 2px solid #c6f4f1;
+            background: linear-gradient(rgb(154, 139, 25), transparent, rgb(75, 68, 12));
+        }
+
+    }
+
+
+    .contenido__lista {
+        color: $colorTexto;
+        padding: 1px 2rem;
+        font-size: 1rem;
+        list-style-position: inside;
+
+        li {
+            margin: 1.5rem;
+        }
+    }
+
+
+    .contenido__textformulario {
+        font-size: 1.3rem;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 1.1rem;
+
+
+        textarea {
+            resize: none;
+            font-size: 0.9rem;
+            margin: .9rem 0;
+        }
+
+        input {
+            font-size: 0.9rem;
+        }
+
+        input[type='submit'] {
+            background-color: $colorTexto;
+            border-radius: 1rem;
+            padding: 0.5rem 0.8rem;
+            margin: 0.5rem 1.5rem;
+            font-weight: 600;
+            font-size: .9rem;
+        }
+    }
+
+}

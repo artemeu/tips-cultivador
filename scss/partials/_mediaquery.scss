@@ -1,0 +1,415 @@
+
+@media (max-width:575.98px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: .9rem;
+        padding: 10px 2rem;
+        margin-bottom: 0;
+    }
+
+    .header,
+    header {
+        .navbar-expand-lg {
+
+            .navbar-toggler-icon {
+                vertical-align: baseline;
+                width: 0.9rem;
+                height: 0.9rem;
+            }
+        }
+
+        .menu {
+            flex-direction: column;
+
+            li {
+                a {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .contenido {
+        max-width: 500px;
+
+        .accordion-flush {        
+            --bs-accordion-btn-icon-width: .9rem;
+    
+            .accordion-item {
+    
+                .accordion-body {
+    
+                    p {
+                        font-size: .9rem;
+                    }
+                }
+    
+                .accordion-header {
+    
+                    .accordion-button {
+                        font-size: 1rem;
+                        
+                    }
+    
+                }
+    
+            }
+    
+        }
+
+        .contenido__subtitulo {
+            font-size: 1rem;
+            padding-left: 1.4rem;
+        }
+
+
+        .contenido__subtitulo--alt {
+            font-size: 1rem;
+            padding-left: 5px;
+            padding-bottom: 0;
+        }
+
+        .seccion {
+            flex-direction: column;
+            align-items: center;
+
+            a {
+                width: 8rem;
+                height: 8rem;
+                font-size: 1rem;
+                padding-inline: 2px;
+            }
+        }
+
+
+        .contenido__lista,
+        .contenido__lista--alt {
+            font-size: 0.9rem;
+            padding: 0 1rem;
+            margin-bottom: 0;
+        }
+
+        .contenido__lista--alt {
+            li {
+                margin: 1.2rem;
+            }
+        }
+
+        .contenido__tabla {
+
+            th {
+                font-size: 0.9rem;
+            }
+
+
+            .contenido__tabla__titulo {
+                font-size: 0.9rem;
+                font-weight: 500;
+            }
+
+
+            .contenido__tabla__ventajas,
+            .contenido__tabla__desventajas {
+                font-size: 0.9rem;
+            }
+
+        }
+
+
+        .contenido__textformulario {
+            font-size: .9rem;
+        }
+
+        form {
+            textarea {
+                font-size: 12px;
+                width: 200px;
+                height: 150px;
+            }
+
+            input {
+                font-size: 12px;
+            }
+
+            input[type='submit'] {
+                font-size: 12px;
+            }
+        }
+
+    }
+
+
+    .piepagina {
+        justify-content: center;
+
+        .piepagina__indice {
+            display: none;
+        }
+
+        .piepagina__redesociales {
+            padding-left: 0;
+            gap: 1rem;
+        }
+    }
+
+}
+
+@media (min-width:576px) and (max-width:767.98px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .header,
+    header {
+        .navbar-expand-lg {
+
+            .navbar-toggler-icon {
+                vertical-align: baseline;
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+
+        .menu {
+            flex-direction: column;
+
+            li {
+                a {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+
+    .contenido {
+        max-width: 600px;
+
+            
+    .accordion-flush {        
+        --bs-accordion-btn-icon-width: 1rem;
+
+        .accordion-item {
+
+            .accordion-body {
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            .accordion-header {
+
+                .accordion-button {
+                    font-size: 1rem;
+                    
+                }
+
+            }
+
+        }
+
+    }
+
+        .contenido__subtitulo,
+        .contenido__subtitulo--alt {
+            font-size: 1rem;
+        }
+
+        .seccion {
+
+            a {
+                width: 8rem;
+                height: 8rem;
+                font-size: 1.1rem;
+                padding-inline: 2px;
+            }
+        }
+
+        .contenido__tabla {
+
+            th {
+                font-size: 1rem;
+            }
+
+
+            .contenido__tabla__titulo {
+                font-size: 1rem;
+                font-weight: 600;
+            }
+
+
+            .contenido__tabla__ventajas,
+            .contenido__tabla__desventajas {
+                font-size: 1rem;
+            }
+
+        }
+
+        .contenido__lista,
+        .contenido__lista--alt {
+            font-size: 1rem;
+        }
+
+        .contenido__textformulario {
+            font-size: 1rem;
+        }
+
+        form {
+            textarea {
+                font-size: 13px;
+            }
+
+            input {
+                font-size: 13px;
+            }
+
+            input[type='submit'] {
+                font-size: 13px;
+            }
+        }
+
+    }
+
+
+    .piepagina {
+        justify-content: center;
+
+        .piepagina__indice {
+            display: none;
+        }
+
+        .piepagina__redesociales {
+            padding-left: 0;
+            gap: 2rem;
+        }
+    }
+
+    .piepagina__redesociales {
+        padding-left: 0;
+        gap: 2rem;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1199.98px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+
+    .header,
+    header {
+        .navbar-expand-lg {
+
+            .navbar-toggler-icon {
+                vertical-align: baseline;
+                width: 1.1rem;
+                height: 1.1rem;
+            }
+        }
+
+        .menu {
+            flex-direction: column;
+
+            li {
+                a {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+
+    .contenido {
+        max-width: 700px;
+
+        
+    .accordion-flush {        
+        --bs-accordion-btn-icon-width: 1rem;
+
+        .accordion-item {
+
+            .accordion-body {
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            .accordion-header {
+
+                .accordion-button {
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                }
+
+            }
+
+        }
+
+        
+    }
+
+        .contenido__subtitulo,
+        .contenido__subtitulo--alt {
+            font-size: 1.1rem;
+        }
+
+        .contenido__tabla {
+
+            th {
+                font-size: 1.1rem;
+            }
+
+
+            .contenido__tabla__titulo {
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+
+
+            .contenido__tabla__ventajas,
+            .contenido__tabla__desventajas {
+                font-size: 1.1rem;
+            }
+
+        }
+
+        .contenido__lista,
+        .contenido__lista--alt {
+            font-size: 1.1rem;
+        }
+
+        .contenido__textformulario {
+            font-size: 1.1rem;
+        }
+
+        form {
+            textarea {
+                font-size: 14px;
+            }
+
+            input {
+                font-size: 14px;
+            }
+
+            input[type='submit'] {
+                font-size: 14px;
+            }
+        }
+
+    }
+
+}

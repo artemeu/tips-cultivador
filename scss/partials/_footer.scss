@@ -1,0 +1,43 @@
+
+.piepagina {
+    padding: 10px;
+    backdrop-filter: blur(3rem);
+    display: flex;
+    justify-content: space-between;
+
+
+    .piepagina__indice {
+        list-style-type: none;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 7px;
+
+        li {
+            a {
+                color: $colorTexto;
+                text-align: center;
+                margin-right: 1rem;
+                text-decoration: none;
+                font-size: .8rem;
+            }
+        }
+    }
+
+    .piepagina__redesociales {
+        list-style-type: none;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 7px;
+    }
+
+    .piepagina__redesociales img {
+        width: 20px;
+    }
+
+}
+
+

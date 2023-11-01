@@ -1,0 +1,31 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h2,
+h3,
+h4 {
+    color: $colorTexto;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+h1 {
+    color: $colorTexto;
+    padding-top: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+
+
+p {
+    color: $colorTexto;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+}
