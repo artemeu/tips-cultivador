@@ -7,7 +7,7 @@ header {
         }
 
         .navbar-toggler {
-            border: 1px solid $colorTexto;
+            border: 1px solid $colorPrimario;
 
             .navbar-toggler-icon {
                 background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(198, 244, 241, 0.99)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -23,14 +23,14 @@ header {
 
             .active {
                 a {
-                    border-bottom: 3px solid $colorTexto;
-                    color: $colorTexto;
+                    border-bottom: 3px solid $colorPrimario;
+                    color: $colorPrimario;
                 }
             }
 
             .nav-item a {
                 &:hover {
-                    color: $colorTexto;
+                    color: $colorPrimario;
                 }
 
             }
@@ -39,13 +39,14 @@ header {
 
 
         li a {
-            color: $colorTexto;
-            font-size: 1.3rem;
+            color: $colorPrimario;
+            font-size: $fontsize + .3rem;
             text-decoration: none;
             position: relative;
             margin-inline: 1rem;
             padding: 2px;
             width: max-content;
+            
 
             &::after {
                 content: "";
@@ -53,9 +54,20 @@ header {
                 display: block;
                 height: 2px;
                 width: 0%;
-                background-color: $colorTexto;
+                background-color: $colorPrimario;
                 bottom: -2px;
                 left: 0px;
+                transition: all ease-in-out 200ms;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                height: 2px;
+                width: 0%;
+                background-color: $colorPrimario;
+                top: 5px;
+                right: 0px;
                 transition: all ease-in-out 200ms;
             }
 
@@ -64,7 +76,9 @@ header {
                     &::after {
                         width: 100%;
                     }
-
+                    &::before {
+                        width: 100%;
+                    }
 
                 }
             }

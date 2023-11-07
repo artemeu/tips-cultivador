@@ -1,10 +1,8 @@
 .contenido {
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(1rem);
     border-radius: 3rem;
     padding-bottom: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    @include flex-column;
     width: 900px;
 
 
@@ -26,16 +24,52 @@
             align-items: center;
             width: 10rem;
             height: 10rem;
-            font-size: 1.2rem;
+            font-size: $fontsize + .2rem;
             font-weight: 700;
-            color: $colorTexto;
+            color: $colorPrimario;
             text-decoration: none;
             border-radius: 50%;
+
+            &:hover {
+                transition: all 1s;
+                transform: scale(1.3);
+                animation: shadow-drop-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
         }
     }
 
+
+    .tarjeta {
+        display: flex;
+        margin-inline: 2rem;
+        gap: 1rem;
+
+        .tarjeta_img {
+            align-self: center;
+            background-color: $colorPrimario;
+            border-radius: 50%;
+            max-width: 50%;
+            --animate-duration: 2s;
+
+            img {
+                --animate-duration: 2.5s;
+
+            }
+        }
+
+        .tarjeta_texto {
+            padding-inline: 1rem;
+        }
+
+    }
+
+    .inversa {
+        flex-direction: row-reverse;
+    }
+
+
     .contenido__subtitulo {
-        font-size: 1.3rem;
+        font-size: $fontsize + .3rem;
         padding-top: 0;
         margin: 10px 0;
         text-align: left;
@@ -50,19 +84,18 @@
         --bs-accordion-btn-padding-x: 2rem;
         --bs-accordion-btn-color: none;
         --bs-accordion-body-padding-x: 2rem;
-        margin-inline: .7rem;
         --bs-accordion-active-color: none;
         --bs-accordion-active-bg: none;
 
 
         .accordion-item {
-            color: $colorTexto;
+            color: $colorPrimario;
 
             .accordion-body {
                 padding: 0;
 
                 p {
-                    font-size: 1.1rem;
+                    font-size: $fontsize + .1rem;
                     padding-inline: 2.5rem;
                 }
             }
@@ -71,7 +104,7 @@
             .accordion-header {
 
                 .accordion-button {
-                    font-size: 1.2rem;
+                    font-size: $fontsize + .2rem;
                     font-weight: 500;
                     padding-left: 1.5rem;
 
@@ -93,9 +126,9 @@
 
 
     .contenido__lista--alt {
-        color: $colorTexto;
+        color: $colorPrimario;
         padding: 5px 2rem;
-        font-size: 1.1rem;
+        font-size: $fontsize + .1rem;
         list-style-type: decimal;
 
         li {
@@ -107,133 +140,94 @@
         }
 
         .contenido__lista__img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;
 
             img {
-                width: 70%;
                 margin: 1rem;
                 border-radius: 10%;
+                max-width: 60%;
             }
         }
 
-        .contenido__lista__img1 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            img {
-                width: 50%;
-                margin: 1rem;
-                border-radius: 10%;
-            }
-        }
     }
 
     .contenido__img--alt {
-        display: flex;
-        justify-content: center;
+        @include flex-center;
         margin: 2rem;
 
         img {
             width: 50%;
             border-radius: 10%;
-
+            max-width: 60%;
         }
     }
 
 
-    .contenido__img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
     .contenido__tabla {
         border-collapse: separate;
-        margin: 1.5rem 2rem;
-        color: $colorTexto;
+        margin: 1.5rem 3rem;
+        color: $colorPrimario;
 
         th {
-            font-size: 1rem;
-            border: 2px solid $colorTexto;
+            font-size: $fontsize;
+            border: 2px solid $colorPrimario;
             text-align: center;
         }
 
 
         .contenido__tabla__titulo {
             text-align: center;
-            font-size: 1rem;
-            padding-inline: 5px;
             font-weight: 700;
-            border: 2px solid $colorTexto;
+            @include contenido-tabla;
         }
 
 
         .contenido__tabla__ventajas {
-            font-size: 1rem;
-            padding-inline: 5px;
-            border: 2px solid $colorTexto;
+            @include contenido-tabla;
             background: linear-gradient(rgb(36, 156, 36), transparent, rgb(25, 106, 25));
         }
 
 
         .contenido__tabla__desventajas {
-            font-size: 1rem;
-            padding-inline: 5px;
-            border: 2px solid #c6f4f1;
+            @include contenido-tabla;
             background: linear-gradient(rgb(154, 139, 25), transparent, rgb(75, 68, 12));
         }
 
     }
 
 
-    .contenido__lista {
-        color: $colorTexto;
-        padding: 1px 2rem;
-        font-size: 1rem;
-        list-style-position: inside;
-
-        li {
-            margin: 1.5rem;
-        }
-    }
-
-
     .contenido__textformulario {
-        font-size: 1.3rem;
+        font-size: $fontsize + .3rem;
         text-align: left;
         margin-bottom: 5px;
     }
 
 
     form {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        @include flex-column;
         align-items: center;
-        font-size: 1.1rem;
+        font-size: $fontsize + .1rem;
 
 
         textarea {
             resize: none;
-            font-size: 0.9rem;
             margin: .9rem 0;
+            @include contenido-form;
+            max-width: 400px;
         }
 
         input {
-            font-size: 0.9rem;
+            @include contenido-form;
+            max-width: 200px;
         }
 
         input[type='submit'] {
-            background-color: $colorTexto;
+            background-color: $colorPrimario;
             border-radius: 1rem;
             padding: 0.5rem 0.8rem;
             margin: 0.5rem 1.5rem;
             font-weight: 600;
-            font-size: .9rem;
+            font-size: $fontsize - .1rem;
         }
     }
 

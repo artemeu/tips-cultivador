@@ -1,13 +1,10 @@
-
 body {
     background-image: url(../img/fondo8.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    @include flex-column;
     min-height: 100vh;
     gap: 3rem;
 }
@@ -15,17 +12,11 @@ body {
 
 main {
     flex-grow: 1;
-    align-self: center;
-    justify-content: center;
+    @include flex-center;
 }
 
 
 .contenedor {
-    background-image: url(../img/fondo8.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 0.2fr auto 0.2fr;

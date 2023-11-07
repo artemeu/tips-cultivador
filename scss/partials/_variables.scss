@@ -1,1 +1,40 @@
-$colorTexto:#c6f4f1;
+$colorPrimario: #c6f4f1;
+$fontsize: 1rem;
+
+@mixin contenido-tabla {
+    font-size: 1rem;
+    padding-inline: 5px;
+    border: 2px solid $colorPrimario;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin contenido-form {
+    font-weight: 600;
+    font-size: .9rem;
+    border-radius: 20px;
+    padding-left: .8rem;
+    background-color: $colorPrimario;
+}
+
+@keyframes shadow-drop-center {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 30px 0px $colorPrimario;
+        box-shadow: 0 0 30px 0px $colorPrimario;
+    }
+}

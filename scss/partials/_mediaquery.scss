@@ -1,14 +1,14 @@
-
-@media (max-width:480px) {
+@media (max-width:479.98px) {
     h1 {
-        font-size: 1.3rem;
+        font-size: $fontsize + .3rem;
     }
 
     p {
-        font-size: .9rem;
+        font-size: $fontsize - .1rem;
         padding: 10px 2rem;
         margin-bottom: 0;
     }
+
 
     .header,
     header {
@@ -26,7 +26,7 @@
 
             li {
                 a {
-                    font-size: 1.2rem;
+                    font-size: $fontsize + .2rem;
                 }
             }
         }
@@ -35,39 +35,49 @@
     .contenido {
         max-width: 400px;
 
-        .accordion-flush {        
+        .accordion-flush {
             --bs-accordion-btn-icon-width: .9rem;
-    
+            --bs-accordion-btn-padding-x: 1rem;
+
             .accordion-item {
-    
+
                 .accordion-body {
-    
+
                     p {
-                        font-size: .9rem;
+                        font-size: $fontsize - .1rem;
                     }
                 }
-    
+
                 .accordion-header {
-    
+
                     .accordion-button {
-                        font-size: 1rem;
-                        
+                        font-size: $fontsize;
+
+                        &::after {
+                            margin-left: 1rem;
+                        }
                     }
-    
+
                 }
-    
+
             }
-    
+
+        }
+
+
+        .tarjeta {
+            flex-direction: column;
+            margin-top: 2rem;
         }
 
         .contenido__subtitulo {
-            font-size: 1rem;
+            font-size: $fontsize;
             padding-left: 1.4rem;
         }
 
 
         .contenido__subtitulo--alt {
-            font-size: 1rem;
+            font-size: $fontsize;
             padding-left: 5px;
             padding-bottom: 0;
         }
@@ -79,7 +89,7 @@
             a {
                 width: 8rem;
                 height: 8rem;
-                font-size: 1rem;
+                font-size: $fontsize;
                 padding-inline: 2px;
             }
         }
@@ -87,7 +97,7 @@
 
         .contenido__lista,
         .contenido__lista--alt {
-            font-size: 0.9rem;
+            font-size: $fontsize - .1rem;
             padding: 0 1rem;
             margin-bottom: 0;
         }
@@ -101,41 +111,42 @@
         .contenido__tabla {
 
             th {
-                font-size: 0.9rem;
+                font-size: $fontsize - .1rem;
             }
 
 
             .contenido__tabla__titulo {
-                font-size: 0.9rem;
+                font-size: $fontsize - .1rem;
                 font-weight: 500;
             }
 
 
             .contenido__tabla__ventajas,
             .contenido__tabla__desventajas {
-                font-size: 0.9rem;
+                font-size: $fontsize - .1rem;
             }
 
         }
 
 
         .contenido__textformulario {
-            font-size: .9rem;
+            font-size: $fontsize - .1rem;
         }
 
         form {
             textarea {
-                font-size: 12px;
-                width: 200px;
-                height: 150px;
+                font-size: $fontsize - .3rem;
+                max-width: 250px;
+                max-height: 150px;
             }
 
             input {
-                font-size: 12px;
+                font-size: $fontsize - .3rem;
+                
             }
 
             input[type='submit'] {
-                font-size: 12px;
+                font-size: $fontsize - .3rem;
             }
         }
 
@@ -157,13 +168,13 @@
 
 }
 
-@media (min-width:481px) and (max-width:768px) {
+@media (min-width:480px) and (max-width:767.98px) {
     h1 {
-        font-size: 1.4rem;
+        font-size: $fontsize + .4rem;
     }
 
     p {
-        font-size: 1rem;
+        font-size: $fontsize;
     }
 
     .header,
@@ -182,7 +193,7 @@
 
             li {
                 a {
-                    font-size: 1.2rem;
+                    font-size: $fontsize + .2rem;
                 }
             }
         }
@@ -192,35 +203,44 @@
     .contenido {
         max-width: 500px;
 
-            
-    .accordion-flush {        
-        --bs-accordion-btn-icon-width: 1rem;
 
-        .accordion-item {
+        .accordion-flush {
+            --bs-accordion-btn-icon-width: 1rem;
 
-            .accordion-body {
+            .accordion-item {
 
-                p {
-                    font-size: 1rem;
+                .accordion-body {
+
+                    p {
+                        font-size: $fontsize;
+                    }
                 }
-            }
 
-            .accordion-header {
+                .accordion-header {
 
-                .accordion-button {
-                    font-size: 1rem;
-                    
+                    .accordion-button {
+                        font-size: $fontsize;
+
+                        &::after {
+                            margin-left: 2rem;
+                        }
+                    }
+
                 }
 
             }
 
         }
 
-    }
+
+        .tarjeta {
+            flex-direction: column;
+            margin-top: 2rem;
+        }
 
         .contenido__subtitulo,
         .contenido__subtitulo--alt {
-            font-size: 1rem;
+            font-size: $fontsize;
         }
 
         .seccion {
@@ -228,7 +248,7 @@
             a {
                 width: 8rem;
                 height: 8rem;
-                font-size: 1.1rem;
+                font-size: $fontsize + .1rem;
                 padding-inline: 2px;
             }
         }
@@ -236,43 +256,43 @@
         .contenido__tabla {
 
             th {
-                font-size: 1rem;
+                font-size: $fontsize;
             }
 
 
             .contenido__tabla__titulo {
-                font-size: 1rem;
+                font-size: $fontsize;
                 font-weight: 600;
             }
 
 
             .contenido__tabla__ventajas,
             .contenido__tabla__desventajas {
-                font-size: 1rem;
+                font-size: $fontsize;
             }
 
         }
 
         .contenido__lista,
         .contenido__lista--alt {
-            font-size: 1rem;
+            font-size: $fontsize;
         }
 
         .contenido__textformulario {
-            font-size: 1rem;
+            font-size: $fontsize;
         }
 
         form {
             textarea {
-                font-size: 13px;
+                font-size: $fontsize - .3rem;
             }
 
             input {
-                font-size: 13px;
+                font-size: $fontsize - .3rem;
             }
 
             input[type='submit'] {
-                font-size: 13px;
+                font-size: $fontsize - .3rem;
             }
         }
 
@@ -299,13 +319,13 @@
 
 }
 
-@media screen and (min-width:769px) and (max-width:1200px) {
+@media screen and (min-width:768px) and (max-width:991.98px) {
     h1 {
-        font-size: 1.4rem;
+        font-size: $fontsize + .4rem;
     }
 
     p {
-        font-size: 1rem;
+        font-size: $fontsize;
     }
 
 
@@ -325,7 +345,7 @@
 
             li {
                 a {
-                    font-size: 1.3rem;
+                    font-size: $fontsize + .3rem;
                 }
             }
         }
@@ -333,83 +353,106 @@
 
 
     .contenido {
-        max-width: 700px;
+        max-width: 600px;
 
-        
-    .accordion-flush {        
-        --bs-accordion-btn-icon-width: 1rem;
 
-        .accordion-item {
+        .accordion-flush {
+            --bs-accordion-btn-icon-width: 1rem;
 
-            .accordion-body {
+            .accordion-item {
 
-                p {
-                    font-size: 1rem;
+                .accordion-body {
+
+                    p {
+                        font-size: $fontsize;
+                    }
                 }
-            }
 
-            .accordion-header {
+                .accordion-header {
 
-                .accordion-button {
-                    font-size: 1.1rem;
-                    font-weight: 400;
+                    .accordion-button {
+                        font-size: $fontsize + .1rem;
+                        font-weight: 400;
+                    }
+
                 }
 
             }
 
         }
 
-        
-    }
+        .tarjeta {
+            flex-direction: column;
+            margin-top: 2rem;
+        }
 
         .contenido__subtitulo,
         .contenido__subtitulo--alt {
-            font-size: 1.1rem;
+            font-size: $fontsize + .1rem;
         }
 
         .contenido__tabla {
 
             th {
-                font-size: 1.1rem;
+                font-size: $fontsize + .1rem;
             }
 
 
             .contenido__tabla__titulo {
-                font-size: 1.1rem;
+                font-size: $fontsize + .1rem;
                 font-weight: 600;
             }
 
 
             .contenido__tabla__ventajas,
             .contenido__tabla__desventajas {
-                font-size: 1.1rem;
+                font-size: $fontsize + .1rem;
             }
 
         }
 
         .contenido__lista,
         .contenido__lista--alt {
-            font-size: 1.1rem;
+            font-size: $fontsize + .1rem;
         }
 
         .contenido__textformulario {
-            font-size: 1.1rem;
+            font-size: $fontsize + .1rem;
         }
 
         form {
             textarea {
-                font-size: 14px;
+                font-size: $fontsize - .2rem;
             }
 
             input {
-                font-size: 14px;
+                font-size: $fontsize - .2rem;
             }
 
             input[type='submit'] {
-                font-size: 14px;
+                font-size: $fontsize - .2rem;
             }
         }
 
+    }
+
+
+    .piepagina {
+        justify-content: center;
+
+        .piepagina__indice {
+            display: none;
+        }
+
+        .piepagina__redesociales {
+            padding-left: 0;
+            gap: 2rem;
+        }
+    }
+
+    .piepagina__redesociales {
+        padding-left: 0;
+        gap: 2rem;
     }
 
 }
