@@ -68,6 +68,14 @@
         .tarjeta {
             flex-direction: column;
             margin-top: 2rem;
+
+            .tarjeta_img {
+                width: 50%;
+    
+                img {
+                    width: 100%;
+                }
+            }
         }
 
         .contenido__subtitulo {
@@ -236,6 +244,14 @@
         .tarjeta {
             flex-direction: column;
             margin-top: 2rem;
+
+            .tarjeta_img {
+                width: 50%;
+    
+                img {
+                    width: 100%;
+                }
+            }
         }
 
         .contenido__subtitulo,
@@ -360,6 +376,7 @@
             --bs-accordion-btn-icon-width: 1rem;
 
             .accordion-item {
+                
 
                 .accordion-body {
 
@@ -384,6 +401,14 @@
         .tarjeta {
             flex-direction: column;
             margin-top: 2rem;
+
+            .tarjeta_img {
+                width: 50%;
+    
+                img {
+                    width: 100%;
+                }
+            }
         }
 
         .contenido__subtitulo,

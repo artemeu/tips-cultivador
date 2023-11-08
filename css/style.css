@@ -193,10 +193,10 @@ header .menu li a:hover:not(.navbar-nav > .active > a)::before {
   align-self: center;
   background-color: #c6f4f1;
   border-radius: 50%;
-  max-width: 50%;
   --animate-duration: 2s;
 }
 .contenido .tarjeta .tarjeta_img img {
+  object-fit: cover;
   --animate-duration: 2.5s;
 }
 .contenido .tarjeta .tarjeta_texto {
@@ -236,6 +236,7 @@ header .menu li a:hover:not(.navbar-nav > .active > a)::before {
   font-size: 1.2rem;
   font-weight: 500;
   padding-left: 1.5rem;
+  justify-content: space-between;
 }
 .contenido .accordion-flush .accordion-item .accordion-header .accordion-button::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23c6f4f1'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
@@ -420,6 +421,12 @@ header .menu li a:hover:not(.navbar-nav > .active > a)::before {
     flex-direction: column;
     margin-top: 2rem;
   }
+  .contenido .tarjeta .tarjeta_img {
+    width: 50%;
+  }
+  .contenido .tarjeta .tarjeta_img img {
+    width: 100%;
+  }
   .contenido .contenido__subtitulo {
     font-size: 1rem;
     padding-left: 1.4rem;
@@ -524,6 +531,12 @@ header .menu li a:hover:not(.navbar-nav > .active > a)::before {
     flex-direction: column;
     margin-top: 2rem;
   }
+  .contenido .tarjeta .tarjeta_img {
+    width: 50%;
+  }
+  .contenido .tarjeta .tarjeta_img img {
+    width: 100%;
+  }
   .contenido .contenido__subtitulo,
   .contenido .contenido__subtitulo--alt {
     font-size: 1rem;
@@ -613,6 +626,12 @@ header .menu li a:hover:not(.navbar-nav > .active > a)::before {
   .contenido .tarjeta {
     flex-direction: column;
     margin-top: 2rem;
+  }
+  .contenido .tarjeta .tarjeta_img {
+    width: 50%;
+  }
+  .contenido .tarjeta .tarjeta_img img {
+    width: 100%;
   }
   .contenido .contenido__subtitulo,
   .contenido .contenido__subtitulo--alt {
