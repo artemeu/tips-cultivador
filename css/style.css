@@ -275,7 +275,6 @@ header .menu li a:hover:not(.navbar-nav > .active > a)::before {
 .contenido .contenido__img--alt img {
   width: 50%;
   border-radius: 10%;
-  max-width: 60%;
 }
 .contenido .contenido__tabla {
   border-collapse: separate;
