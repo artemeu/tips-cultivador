@@ -357,6 +357,7 @@ header .menu li a:hover:not(.navbar-nav > .active > a)::before {
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 7px;
+  margin-left: 1rem;
 }
 .piepagina .piepagina__indice li a {
   color: #c6f4f1;
@@ -371,6 +372,7 @@ header .menu li a:hover:not(.navbar-nav > .active > a)::before {
   gap: 10px;
   flex-wrap: wrap;
   padding-left: 0;
+  margin-right: 1rem;
   margin-bottom: 7px;
 }
 .piepagina .piepagina__redesociales img {
