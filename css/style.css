@@ -147,7 +147,7 @@ header .menu li a:hover:not(.navbar-nav > .active > a)::before {
 }
 
 .contenido {
-  backdrop-filter: blur(1rem);
+  backdrop-filter: blur(2rem);
   border-radius: 3rem;
   padding-bottom: 1rem;
   display: flex;
@@ -264,7 +264,7 @@ header .menu li a:hover:not(.navbar-nav > .active > a)::before {
 .contenido .contenido__lista--alt .contenido__lista__img img {
   margin: 1rem;
   border-radius: 10%;
-  max-width: 60%;
+  max-width: 50%;
 }
 .contenido .contenido__img--alt {
   display: flex;
