@@ -12,7 +12,12 @@
 
     .header,
     header {
-        .navbar-expand-lg {
+        .navbar-expand-xl {
+
+
+            .navbar-collapse{
+                margin-top: 1rem;
+            }
 
             .navbar-toggler-icon {
                 vertical-align: baseline;
@@ -187,7 +192,11 @@
 
     .header,
     header {
-        .navbar-expand-lg {
+        .navbar-expand-xl {
+
+            .navbar-collapse{
+                margin-top: 1rem;
+            }
 
             .navbar-toggler-icon {
                 vertical-align: baseline;
@@ -347,7 +356,12 @@
 
     .header,
     header {
-        .navbar-expand-lg {
+        .navbar-expand-xl {
+
+            .navbar-collapse{
+                margin-top: 1rem;
+            }
+
 
             .navbar-toggler-icon {
                 vertical-align: baseline;
@@ -445,6 +459,7 @@
             font-size: $fontsize + .1rem;
         }
 
+
         form {
             textarea {
                 font-size: $fontsize - .2rem;
@@ -472,6 +487,160 @@
         .piepagina__redesociales {
             padding-left: 0;
             gap: 2rem;
+        }
+    }
+
+    .piepagina__redesociales {
+        padding-left: 0;
+        gap: 2rem;
+    }
+
+}
+
+
+@media screen and (min-width:992px) and (max-width:1139.98px) {
+    h1 {
+        font-size: $fontsize + .5rem;
+    }
+
+    p {
+        font-size: $fontsize + .1rem;
+    }
+
+
+    .header,
+    header {
+        .navbar-expand-xl {
+
+            .navbar-collapse{
+                margin-top: 1rem;
+            }
+
+
+            .navbar-toggler-icon {
+                vertical-align: baseline;
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+        }
+
+        .menu {
+            flex-direction: column;
+
+            li {
+                a {
+                    font-size: $fontsize + .4rem;
+                }
+            }
+        }
+    }
+
+    .contenido {
+        max-width: 700px;
+
+        .accordion-flush {
+            --bs-accordion-btn-icon-width: 1.1rem;
+
+            .accordion-item {
+
+                .accordion-body {
+
+                    p {
+                        font-size: $fontsize + .1rem;
+                    }
+                }
+
+                .accordion-header {
+
+                    .accordion-button {
+                        font-size: $fontsize + .2rem;
+                        font-weight: 500;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+
+        .tarjeta {
+            flex-direction: column;
+            margin-top: 3rem;
+
+            .tarjeta_img {
+                width: 50%;
+    
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .contenido__subtitulo,
+        .contenido__subtitulo--alt {
+            font-size: $fontsize + .2rem;
+        }
+
+
+        .contenido__tabla {
+
+            th {
+                font-size: $fontsize + .2rem;
+            }
+
+
+            .contenido__tabla__titulo {
+                font-size: $fontsize + .2rem;
+                font-weight: 600;
+            }
+
+
+            .contenido__tabla__ventajas,
+            .contenido__tabla__desventajas {
+                font-size: $fontsize + .2rem;
+            }
+
+        }
+
+        
+        .contenido__lista,
+        .contenido__lista--alt {
+            font-size: $fontsize + .2rem;
+        }
+
+
+        .contenido__textformulario {
+            font-size: $fontsize + .2rem;
+        }
+
+        form {
+            textarea {
+                font-size: $fontsize - .1rem;
+            }
+
+            input {
+                font-size: $fontsize - .1rem;
+                
+            }
+
+            input[type='submit'] {
+                font-size: $fontsize - .1rem;
+            }
+        }
+
+    }
+
+
+    
+    .piepagina {
+        justify-content: space-between;
+
+
+        .piepagina__redesociales {
+            padding-left: 0;
+            
         }
     }
 
